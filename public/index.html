@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="output.css" />
+    <!-- link font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link aos animetion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- link js Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <!-- navbar and header -->
+    <header
+    id="navbar" class="w-full fixed z-50 text-white shadow-md shadow-white  p-0"
+    >
+      <nav
+        class="w-full h-auto lg:px-36 md:px-14 max-sm:px-6" >
+        <div class="w-full h-auto flex items-center justify-between py-6 uppercase font-sans ">
+            <li class="list-none text-3xl max-sm:text-2xl font-bold">Thiv Coding</li>
+            <ul class="lg:flex hidden items-center gap-12">
+              <li class="list-hver"><a href="#">Home</a></li>
+              <li class="list-hver"><a href="#about">About</a></li>
+              <li class="list-hver"><a href="#service">Service</a></li>
+              <li class="list-hver"><a href="#skill">Skill</a></li>
+              <li class="list-hver"><a href="#portfolio">Portfolio</a></li>
+              <li class="list-hver"><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- dropdown navbar -->
+            <ul id="drop" class=" flex items-center border-t-2 border-white justify-center max-sm:gap-6 md:gap-7 absolute max-sm:top-[82px] md:top-[86px] -left-[102%] transition-all duration-500 ease-in-out  w-full md:h-[400px] max-sm:h-[320px] overflow-hidden bg-gray-700   shadow-md shadow-gray-400 p-5 flex-col">
+              <li class="list-hver"><a href="#">Home</a></li>
+              <li class="list-hver"><a href="#about">About</a></li>
+              <li class="list-hver"><a href="#service">Service</a></li>
+              <li class="list-hver"><a href="#skill">Skill</a></li>
+              <li class="list-hver"><a href="#portfolio">Portfolio</a></li>
+              <li class="list-hver"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="lg:flex items-center hidden">
+              <a href="" class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  class="me-2 text-blue-600 font-bold bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+                Search
+              </a>
+              <button class="ms-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="33"
+                  height="33"
+                  fill="currentColor"
+                  class="text-blue-600 bi bi-grid-3x3-gap"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="lg:hidden flex items-center gap-5">
+              
+              <button id="open" class=""><i class="fa-solid fa-bars  max-lg:text-4xl max-sm:text-3xl cursor-pointer"></i></button>
+              <button id="close" class="hidden"><i class="fa-solid close hidden  fa-xmark max-lg:text-4xl  max-sm:text-3xl cursor-pointer"></i></button>
+            </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Home -->
+      <section
+        class="lg:pt-20 md:pt-24 pt-28 w-full h-auto lg:px-36 md:px-14 px-6 bg-gradient-to-r from-black to-indigo-950">
+        <div class="w-full lg:flex md:flex lg:h-lvh md:h-[600px] h-auto overflow-hidden ">
+          <div
+            class="lg:pe-10 lg:w-[55%] md:w-1/2 sm:w-full lg:flex md:flex sm:hidden lg:h-full md:h-full sm:h-1/2 flex-col justify-center uppercase font-sans lg:gap-8 md:gap-5"
+          >
+            <h1
+              class="text-white lg:text-7xl md:text-4xl max-sm:text-3xl font-bold m-0"
+              data-aos-eseing="ease-in-out"
+              data-aos="zoom-out-down"
+              data-aos-delay="450"
+            >
+              Thiv <span class="thiv"></span>
+            </h1>
+            <p
+              class="text-white max-sm:my-4 " 
+              data-aos-eseing="ease-in-out"
+              data-aos="zoom-out-right"
+              data-aos-delay="450"
+            >
+              Together we the people achieve more than any single person could
+              ever do alone
+            </p>
+            <div
+              data-aos-eseing="ease-in-out"
+              data-aos="zoom-out-up"
+              data-aos-delay="450"
+              class="lg:w-[35%] md:w-[63%] max-sm:w-[65%]  hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer active:shadow-md active:shadow-yellow-400 active::translate-x-1 active:translate-y-1 shadow-md hover:shadow-pink-700 rounded-md text-white px-5 py-3 bg-blue-700 flex items-center justify-between"
+            >
+              <a href="#" class="uppercase">Getting Started</a>
+              <div class="p-2 bg-white rounded-md">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="text-blue-800 bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:w-[45%] md:w-1/2 sm:w-full flex items-center justify-center lg:h-full md:h-auto sm:h-1/2 lg:p-20 md:p-2 max-sm:my-8 lg:pe-0"
+            data-aos-eseing="ease-in-out"
+            data-aos="zoom-out-down"
+            data-aos-delay="450"
+          >
+            <div class="w-full h-auto">
+              <img
+                src="src/image/Profile.JPG"
+                alt=""
+                class="shadow-white shadow-md rounded-[50px] object-cover h-full w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about me -->
+      <section
+        id="about"
+        class="lg:pt-10 max-sm:py-8 w-full h-auto lg:px-36 md:px-14 px-6 bg-gray-300">
+        <div
+          class="w-full lg:flex md:flex lg:h-lvh md:h-[600px] h-auto overflow-hidden"
+          data-aos-eseing="ease-in-out"
+          data-aos="zoom-out-down"
+          data-aos-delay="450"
+        >
+          <div
+            class="lg:w-[45%] md:w-1/2 sm:w-full flex items-center justify-center lg:h-full md:h-auto sm:h-1/2"
+          >
+            <div
+              class="w-full h-full lg:pe-16 lg:py-22 md:py-16 md:pe-2 ps-0"
+              data-aos-eseing="ease-in-out"
+              data-aos="zoom-in"
+            >
+              <img
+                src="src/image/Profile1.JPG"
+                alt=""
+                class="shadow-white shadow-md rounded-[50px] object-cover h-full w-full"
+              />
+            </div>
+          </div>
+          <div
+            class="lg:ps-4 md:ps-4  max-sm:my-4 max-sm:mt-6 lg:w-[55%]  md:w-1/2 sm:w-full lg:flex md:flex sm:hidden lg:h-full md:h-full sm:h-1/2 flex-col justify-center uppercase font-sans  md:gap-3"
+          >
+            <p
+              class="text-blue-700 lg:text-xl md:text-xl max-sm:text-md font-bold "
+              data-aos="fade-down-right"
+              data-aos-eseing="ease-in-out"
+              data-aos-delay="450"
+            >
+              Our Story
+            </p>
+            <h1
+              class="text-black lg:text-5xl md:text-2xl max-sm:text-2xl font-bold m-0"
+              data-aos="fade-left"
+              data-aos-eseing="ease-in-out"
+              data-aos-delay="450"
+            >
+              Failure is the comdiment that gives
+              <span class="text-blue-700">Success</span>
+            </h1>
+            <p
+              class="text-gray-900 lg:my-8 max-sm:my-4 font-bold"
+              data-aos="fade-up-left"
+              data-aos-eseing="ease-in-out"
+              data-aos-delay="450"
+            >
+              Spend more time focusing on the important aspects of your
+              business. Turn to McCartney HR LLC in Brooklyn, NY for your HR
+              solutions. As a high-end virtual HR company, we offer an online HR
+              system that can be customized to your business needs.
+            </p>
+            <div
+              data-aos="fade-up-left"
+              data-aos-eseing="ease-in-out"
+              data-aos-delay="450"
+              class="lg:w-[35%] md:w-[60%] max-sm:w-[60%] hover:scale-105 transition-all duration-500 ease-in-out shadow-md hover:shadow-pink-700 cursor-pointer active:shadow-md active:shadow-yellow-400 active::translate-x-1 active:translate-y-1 rounded-md text-white px-5 py-3 bg-blue-700 flex items-center justify-between"
+            >
+              <a href="#" class="uppercase">Download Cv</a>
+              <div class="p-2 bg-white rounded-md">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="text-blue-800 bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services -->
+      <section
+        id="service"
+        class="lg:pt-14 w-full h-auto lg:px-36 bg-gray-300 gap-5 overflow-hidden"
+      >
+        <div
+          class="w-full h-auto lg:py-16 md:py-8 max-sm:py-8"
+          data-aos="fade-up"
+          data-aos-duration="2000">
+          <div
+            class="w-full h-auto font-bold font-sans uppercase flex items-center flex-col justify-center"
+          >
+            <p class="text-xl md:text-md text-blue-700">Working Process</p>
+            <h1 class="text-black lg:text-5xl md:text-4xl max-sm:text-4xl font-bold">
+              Our <span class="text-blue-700">services</span>
+            </h1>
+          </div>
+          <div class="lg:pt-16 lg:mt-0 md:mt-6 lg:px-0  max-sm:pt-6 md:px-14 max-sm:px-6 flex-wrap flex justify-between">
+            <div
+              class="lg:w-[24%] md:w-[48%] md:px-4 max-sm:w-full my-5 lg:h-[410px] md:h-auto sm:h-auto bg-white rounded-xl p-5 shadow-md shadow-gray-400"
+              data-aos="fade-right"
+              data-aos-eseing="ease-in-out"
+              data-aos-delay="450"
+            >
+              <div class="w-full h-[100px] overflow-hidden relative">
+                <div
+                  class="absolute bg-blue-800 w-[80px] h-[80px] overflow-hidden left-0 rounded-md"
+                >
+                  <img
+                    src="src/icon/gallery.png"
+                    alt=""
+                    class="w-full h-full object-cover p-2"
+                  />
+                </div>
+              </div>
+              <div class="w-full h-auto font-bold font-sans">
+                <h1 class="text-2xl text-blue-800">Web Design</h1>
+                <p class="text-xl text-gray-600 my-5 mb-8">
+                  I can create minimal & modern web design with lasted web
+                  technologies. I can covert any Ul to web pixel-perfect.
+                </p>
+                <div
+                  class="lg:w-[50%] md:w-[45%] max-sm:w-[50%] grid place-items-center hover:scale-105 px-3 py-3 active:shadow-yellow-400 text-white rounded-md transition-all duration-500 ease-in-out cursor-pointer hover:bg-red-700 hover:shadow-blue-700 shadow-md bg-blue-400"
+                >
+                  <a href="#">Know More ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:w-[24%] md:w-[48%] md:px-4 max-sm:w-full my-5 lg:h-[410px] md:h-auto max-sm:h-auto bg-white rounded-xl p-5 shadow-md shadow-gray-400"
+              data-aos="fade-down"
+              data-aos-eseing="ease-in-out"
+              data-aos-delay="450"
+            >
+              <div class="w-full h-[100px] overflow-hidden relative">
+                <div
+                  class="absolute bg-blue-800 w-[80px] h-[80px] overflow-hidden left-0 rounded-md"
+                >
+                  <img
+                    src="src/icon/IT.png"
+                    alt=""
+                    class="w-full h-full object-cover p-2"
+                  />
+                </div>
+              </div>
+              <div class="w-full h-auto font-bold font-sans">
+                <h1 class="text-2xl text-blue-800">Web Development</h1>
+                <p class="text-xl text-gray-600 my-5 mb-8">
+                  I worked with React, AngularJS, and Node.js to create dynamic
+                  & interactive web applications.
+                </p>
+                <div
+                  class="lg:w-[50%] md:w-[45%] max-sm:w-[50%] grid place-items-center hover:scale-105 px-3 py-3 active:shadow-yellow-400 text-white rounded-md transition-all duration-500 ease-in-out cursor-pointer hover:bg-red-700 hover:shadow-blue-700 shadow-md bg-blue-400"
+                >
+                  <a href="#">Know More ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:w-[24%] md:w-[48%] md:px-4 max-sm:w-full my-5 lg:h-[410px] md:h-auto  max-sm:h-auto bg-white rounded-xl p-5 shadow-md shadow-gray-400"
+              data-aos="fade-up"
+              data-aos-eseing="ease-in-out"
+              data-aos-delay="450"
+            >
+              <div class="w-full h-[100px] overflow-hidden relative">
+                <div
+                  class="absolute bg-blue-800 w-[80px] h-[80px] overflow-hidden left-0 rounded-md"
+                >
+                  <img
+                    src="src/icon/Seo.png"
+                    alt=""
+                    class="w-full h-full object-cover p-2"
+                  />
+                </div>
+              </div>
+              <div class="w-full h-auto font-bold font-sans">
+                <h1 class="text-2xl text-blue-800">SEO specialist</h1>
+                <p class="text-xl text-gray-600 my-5 mb-8">
+                  I can research key-word & do on-page SEO on your website that
+                  can create healthy traffic to your website.
+                </p>
+                <div
+                  class="lg:w-[50%] md:w-[45%] max-sm:w-[50%] grid place-items-center hover:scale-105 px-3 py-3 active:shadow-yellow-400 text-white rounded-md transition-all duration-500 ease-in-out cursor-pointer hover:bg-red-700 hover:shadow-blue-700 shadow-md bg-blue-400"
+                >
+                  <a href="#">Know More ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:w-[24%] md:w-[48%] md:px-4 max-sm:w-full my-5 lg:h-[410px] md:h-auto max-sm:h-auto bg-white rounded-xl p-5 shadow-md shadow-gray-400"
+              data-aos="fade-left"
+              data-aos-eseing="ease-in-out"
+              data-aos-delay="450"
+            >
+              <div class="w-full h-[100px] overflow-hidden relative">
+                <div
+                  class="absolute bg-blue-800 w-[80px] h-[80px] overflow-hidden left-0 rounded-md"
+                >
+                  <img
+                    src="src/icon/Security.png"
+                    alt=""
+                    class="w-full h-full object-cover p-2"
+                  />
+                </div>
+              </div>
+              <div class="w-full h-auto font-bold font-sans">
+                <h1 class="text-2xl text-blue-800">Security Expert</h1>
+                <p class="text-xl text-gray-600 my-5 mb-8">
+                  Monitor your website, prevent any unusual activities happing
+                  on website & create a system that can protect .
+                </p>
+                <div
+                  class="lg:w-[50%] md:w-[45%] max-sm:w-[50%] grid place-items-center hover:scale-105 px-3 py-3 active:shadow-yellow-400 text-white rounded-md transition-all duration-500 ease-in-out cursor-pointer hover:bg-red-700 hover:shadow-blue-700 shadow-md bg-blue-400"
+                >
+                  <a href="#">Know More ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- My Skills -->
+      <section
+        id="skill"
+        class="lg:pt-14 w-full h-auto lg:px-36 md:px-14 max-sm:px-6 bg-gray-300">
+        <div
+          class="w-full h-auto lg:py-16 md:py-10 max-sm:py-10 "
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-eseing="ease-in-out"
+        >
+          <div class="w-full h-auto flex items-center justify-center font-sans">
+            <h1 class="text-black uppercase lg:text-5xl md:text-4xl max-sm:text-4xl font-bold">
+              My <span class="text-blue-700">Skills</span>
+            </h1>
+          </div>
+          <div class="lg:pt-12 md:pt-12 max-sm:pt-8 flex-wrap flex justify-center lg:gap-7 md:gap-6 max-sm:gap-4 lg:ms-2 ">
+            <div
+              class="lg:w-[18%] md:w-[22%] max-md:w-[20%] max-sm:w-[30%]  lg:h-[250px md:h-[210px]] max-sm:h-1500px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2 ">
+                  <img
+                    src="src/icon/c.png"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px]"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">C</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/c++.png"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px]"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">C++</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/java.png"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px]"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">JAVA</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/html.png"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px]"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">HTML</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/css.png"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px] px-4"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">CSS</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/javascript.png"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px] px-4"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">JAVASCRIPT</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/boostrap.png"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px]"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">BOOSTRAP</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/tailwind.png"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px]"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">TAILWIND</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/React.webp"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px]"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">REACT JS</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/nodejs.png"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px]"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">NODE JS</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/Jquery.webp"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px]"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">JQUERY</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/php.png"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px]"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">PHP</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/mysql.png"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px]"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">MY SQL</h2>
+              </div>
+            </div>
+            <div
+              class="lg:w-[18%] md:w-[22%] reponsive max-md:w-[20%] max-sm:w-[30%] lg:h-[250px] md:h-[210px] max-sm:h-[150px] rounded-md overflow-hidden shadow-md shadow-blue-400 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              <div class="w-full lg:h-[80%] md:h-[80%] max-sm:h-[80%] bg-sky-200 overflow-hidden">
+                <div class="w-full h-full grid place-items-center max-sm:p-2">
+                  <img
+                    src="src/icon/laravel.png"
+                    alt=""
+                    class="lg:w-[150px] md:w-[125px] max-sm:w-[100px] lg:h-[150px] md:h-[125px] max-sm:h-[100px]"
+                  />
+                </div>
+              </div>
+              <div class="w-full lg:h-[20%] md:h-[20%] max-sm:h-[20%] grid place-items-center bg-red-500">
+                <h2 class="lg:text-2xl md:text-xl max-sm:text-md text-white font-bold">LARAVEL</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- My Project-->
+      <section
+        id="portfolio"
+        class="lg:pt-14 w-full h-auto lg:px-36 md:px-14 max-sm:px-6  bg-gray-300"
+      >
+        <div
+          class="w-full h-auto py-16"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-eseing="ease-in-out"
+        >
+          <div class="w-full h-auto lg:flex max-sm:flex-none items-center font-bold font-sans">
+            <div class="lg:w-1/2 md:w-full max-sm:w-full uppercase md:flex max-sm:flex justify-center items-center flex-col">
+              <p class="lg:text-xl md:text-xl max-sm:text-md text-blue-700">Working Process</p>
+              <h1 class="text-black lg:text-5xl md:text-4xl max-sm:text-4xl font-bold">
+                My <span class="text-blue-700">Project</span>
+              </h1>
+            </div>
+            <div
+              class="lg:w-1/2 md:w-full max-sm:w-full lg:ps-10  lg:border-s-4 max-lg:border-t-4 max-sm:border-t-4 max-md:border-t-4 max-sm:pt-3 max-sm:mt-7 md:mt-4 md:pt-5 border-blue-700 h-auto flex items-center"
+            >
+              <p class="text-xl text-blue-700 max-sm:pe-3 md:pe-5 max-lg:pe-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                earum,
+              </p>
+              <div class="flex gap-3">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-square text-blue-700"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                    />
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-square text-blue-700"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="lg:pt-16 max-sm:pt-6 md:pt-6 flex-wrap flex justify-between">
+            <div class="lg:w-[32%] max-sm:w-full md:w-[48%] my-5 lg:h-[500px] max-sm:h-[410px] md:h-[430px] bg-black rounded-xl p-10">
+              <div
+                class="w-full h-full overflow-hidden rounded-xl relative shadow-md shadow-white"
+              >
+                <img
+                  src="src/image/project-anime.png"
+                  class="w-full absolute h-auto object-cover"
+                  alt=""
+                />
+                <div class="click-btn">
+                  <a
+                    href="https://project-movie-anime.vercel.app"
+                    target="_blank"
+                    >See More!</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-[32%] max-sm:w-full md:w-[48%] my-5 lg:h-[500px] max-sm:h-[410px] md:h-[430px] bg-black rounded-xl p-10">
+              <div
+                class="w-full h-full overflow-hidden rounded-xl relative shadow-md shadow-white"
+              >
+                <img
+                  src="src/image/project-condo.png"
+                  class="w-full absolute h-auto object-cover"
+                  alt=""
+                />
+                <div class="click-btn">
+                  <a href="https://store-condo.vercel.app/" target="_blank"
+                    >See More!</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-[32%] max-sm:w-full md:w-[48%] my-5 lg:h-[500px] max-sm:h-[410px] md:h-[430px] bg-black rounded-xl p-10">
+              <div
+                class="w-full h-full overflow-hidden rounded-xl relative shadow-md shadow-white"
+              >
+                <img
+                  src="src/image/project-eshop.png"
+                  class="w-full absolute h-auto object-cover"
+                  alt=""
+                />
+                <div class="click-btn">
+                  <a
+                    href="https://shop-electronics-aefv.vercel.app/"
+                    target="_blank"
+                    >See More!</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-[32%] max-sm:w-full md:w-[48%] my-5 lg:h-[500px] max-sm:h-[410px] md:h-[430px] bg-black rounded-xl p-10">
+              <div
+                class="w-full h-full overflow-hidden rounded-xl relative shadow-md shadow-white"
+              >
+                <img
+                  src="src/image/project-rupp.png"
+                  class="w-full absolute h-auto object-cover"
+                  alt=""
+                />
+                <div class="click-btn">
+                  <a href="https://rupp-university.vercel.app/" target="_blank"
+                    >See More!</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-[32%] max-sm:w-full md:w-[48%] my-5 lg:h-[500px] max-sm:h-[410px] md:h-[430px] bg-black rounded-xl p-10">
+              <div
+                class="w-full h-full overflow-hidden rounded-xl relative shadow-md shadow-white"
+              >
+                <img
+                  src="src/image/project-burger.png"
+                  class="w-full absolute h-auto object-cover"
+                  alt=""
+                />
+                <div class="click-btn">
+                  <a href="https://store-burger.vercel.app/" target="_blank"
+                    >See More!</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:w-[32%] max-sm:w-full md:w-[48%] hover:scale-10 md:h-[430px] my-5 lg:h-[500px] max-sm:h-[410px] bg-black rounded-xl p-10"
+            >
+              <div
+                class="w-full h-full overflow-hidden rounded-xl relative shadow-md shadow-white"
+              >
+                <img
+                  src="src/image/project-portfolio.png"
+                  class="w-full absolute h-auto object-cover"
+                  alt="no project"
+                />
+                <div class="click-btn">
+                  <a href="#" target="_blank">See More!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact -->
+      <section
+        id="contact"
+        class="lg:pt-14 w-full h-auto lg:px-36 md:px-14 max-sm:px-6  bg-gray-300">
+        <div
+          class="w-full lg:h-lvh md:h-auto max-sm:h-auto overflow-hidden"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-eseing="ease-in-out"
+          >
+          <div class="uppercase pb-5 lg:pt-16 max-sm:pt-4 md:pt-4">
+            <h1 class="text-black lg:text-4xl md:text-4xl max-sm:text-3xl font-bold text-center">
+              Can <span class="text-blue-700">Cantact for me</span>
+            </h1>
+          </div>
+          <div
+            class="w-ful max-sm:py-6 lg:flex md:flex lg:h-[550px] md:h-[600px] max-sm:h-auto">
+            <div
+              class="lg:p-12 lg:w-[50%] md:w-[50%] max-sm:w-full max-md:w-full flex h-full flex-col justify-center font-sans"
+            >
+              <h1
+                class="text-red-700 lg:text-5xl md:text-3xl max-sm:text-2xl font-bold uppercase"
+                
+              >
+              <!-- data-aos-eseing="ease-in-out"
+                data-aos="zoom-out-down"
+                data-aos-delay="450" -->
+                Let's chat.
+              </h1>
+              <h1
+                class="text-blue-900 lg:text-5xl md:text-3xl max-sm:text-2xl font-bold uppercase my-4" >
+                Tell meabout your
+              </h1>
+              <h1
+                class="text-red-700 lg:text-5xl md:text-3xl max-sm:text-2xl font-bold uppercase"
+               
+              >
+              <!--  data-aos-eseing="ease-in-out"
+                data-aos="zoom-out-right"
+                data-aos-delay="450" -->
+                project.
+              </h1>
+              <p
+                class="text-pink-800 my-4 font-bold uppercase"
+                
+              >
+              <!-- data-aos-eseing="ease-in-out"
+                data-aos="zoom-out-up"
+                data-aos-delay="450" -->
+                Let's create something together 🤟🏽
+              </p>
+              <div
+                class="flex items-center lg:px-16">
+                <div
+                  class="bg-blue-700 rounded-md grid place-items-center w-12 h-12"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi text-white cursor-pointer bi-envelope"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                    />
+                  </svg>
+                </div>
+                <div class="font-sans font-bold ms-3">
+                  <p class="text-red-700 text-md">Mail me at</p>
+                  <a
+                    href="vanthiv17032005@gmail.com"
+                    class="text-blue-700 text-md cursor-pointer"
+                    >vanthiv17032005@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- form input -->
+            <div
+              class="lg:w-[50%] md:w-[50%] max-md:w-full flex items-center justify-center h-full  lg:py-12 max-sm:py-6 max-sm:pt-10 md:py-16 md:pb-20"
+            >
+              <div
+                class="w-[500px] p-10 h-auto shadow-sm rounded-xl shadow-black bg-white"          >
+                <h1 class="text-sky-700 font-sans font-bold text-2xl">
+                  Send us a message 🚀
+                </h1>
+                <form action="" class="w-full h-auto pt-3">
+                  <input type="text" class="input" placeholder="Full name*" />
+                  <input
+                    type="email"
+                    class="input"
+                    placeholder="Email address*"
+                  />
+                  <input
+                    type="password"
+                    class="input mb-5"
+                    placeholder="Password*"
+                  />
+                  <label for="">Tell us about your project*</label>
+                  <textarea class="w-full input resize-none"></textarea>
+                  <div class="lg:w-[34%] md:w-[60%] max-sm:w-[60%] h-auto px-5  py-3 hover:scale-105 active:shadow-md active:shadow-yellow-400  hover:shadow-blue-700 rounded-md transition-all duration-500 ease-in-out cursor-pointer hover:bg-red-700  shadow-md bg-blue-700">
+                    <a
+                      href=""
+                      class="place-items-center grid   text-white"
+                      >Send message</a
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class=" w-full h-auto lg:px-36 md:px-14 max-sm:px-6 bg-gray-700  ">
+        <div class=" w-full  h-auto lg:py-12 md:py-8 max-sm:py-6">
+          <div class="flex flex-wrap  pt-3 font-sans text-white">
+            <div class=" lg:w-[25%] md:w-1/2 max-sm:w-full lg:px-3 md:px-5 md:ps-0  max-sm:px-0">
+              <h5 class="text-xl uppercase font-bold ">
+                <i class="fa-solid fa-house me-2"></i>Universit
+              </h5>
+              <div class="py-4 font-bold ">
+                <p class="">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Tempora dolor alias dicta enim eveniet obcaecati, voluptatem
+                  maiores ratione eos iste!
+                </p>
+              </div>
+            </div>
+            <div class=" lg:w-[25%] md:w-1/2  max-sm:w-full col-12 lg:px-3 md:px-5 max-sm:px-0">
+              <h5 class="text-xl uppercase font-bold ">Products</h5>
+              <div class="py-4 font-bold ">
+                <ul class="">
+                  <li class="py-1"><a href="#">Home</a></li>
+                  <li class="py-1"><a href="#">About</a></li>
+                  <li class="py-1"><a href="#">Service</a></li>
+                  <li class="py-1"><a href="#">Skill</a></li>
+                  <li class="py-1"><a href="#">Portfolio</a></li>
+                  <li class="py-1"><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class=" lg:w-[25%] md:w-1/2 max-sm:w-full col-12 lg:px-3 md:px-5 md:ps-0 max-sm:px-0">
+              <h5 class="text-xl uppercase font-bold ">
+                Useful Links
+              </h5>
+              <div class="py-4 font-bold ">
+                <ul class="">
+                  <li>
+                    <a t-0" href="#">Pricing</a>
+                  </li>
+                  <li class="py-1"><a href="#">Settings</a></li>
+                  <li class="py-1"><a href="#">Orders</a></li>
+                  <li class="py-1"><a href="#">Help</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class=" lg:w-[25%] md:w-1/2 max-sm:w-full col-12 lg:px-3 md:px-5  max-sm:px-0">
+              <h5 class="text-xl uppercase font-bold ">Contact</h5>
+              <div class="py-4 font-bold ">
+                <ul class="">
+                  <li class="py-1">
+                    <a  href="#"
+                      ><i class="fa-solid fa-house me-3"></i>royal university of
+                      phnom penh</a
+                    >
+                  </li>
+                  <li class="py-1">
+                    <a href="#"
+                      ><i class="fa-solid fa-envelope me-3"></i
+                      >vanthiv17032005@gmail.com</a
+                    >
+                  </li>
+                  <li class="py-1">
+                    <a href="#"
+                      ><i class="fa-solid fa-phone me-3"></i>+885 978922013</a
+                    >
+                  </li>
+                  <li class="py-1">
+                    <a href="#"
+                      ><i class="fa-solid fa-mobile-screen-button me-3"></i>+885 978922013</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full py-2  bg-gray-800 text-white font-bold font-sans p-0  px-4">
+        <h1
+          class="text-xl text-center m-0  py-4 tracking-tighter"
+        >
+          Copyright @2025 All rights reserved | This template is made by Thiv
+          <span
+            class=" text-yellow-300 fw-bold Thiv"></span>
+        </h1>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?fbclid=IwY2xjawFwVaRleHRuA2FlbQIxMAABHeJ8NPxpuUluvD5NUmA0Tvsq1PT5WepPIo3x1wglWc0p1KQJk3XhLP_1yQ_aem_6BW4iUjVsOAjuuZ37nFuFw"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+    var typed = new Typed(".thiv", {
+      strings: ["Full stack web developer", " Coding"],
+      typeSpeed: 132,
+      backSpeed: 132,
+      loop: true,
+    });
+    var typed = new Typed(".Thiv", {
+      strings: ["Full stack web developer", " Coding"],
+      typeSpeed: 132,
+      backSpeed: 132,
+      loop: true,
+    });
+  </script>
+</html>
