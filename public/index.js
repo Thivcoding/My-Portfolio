@@ -18,7 +18,7 @@ const navdrop = document.getElementById("drop");
             navbar.style.padding = "2px 0px";
           }
         }
-        alert("I'm Thivcoding ! Wellcome To my portfolio 🥰🙏🏽");
+        alert("I'm Thivcoding ! Welcome To my portfolio 🥰🙏🏽");
 
         $(document).ready(function() {
           $("#open").click(function() {
